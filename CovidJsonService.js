@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-class CovidJsonServise {
+class CovidJsonService {
     constructor() {
         this.URI = 'https://www.datos.gov.co/resource/gt2j-8ykr.json';
     }
@@ -97,4 +97,4 @@ class CovidJsonServise {
     }
 }
 
-module.exports = CovidJsonServise;
+module.exports = CovidJsonService;

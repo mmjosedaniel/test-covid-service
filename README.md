@@ -1,10 +1,10 @@
-# Test Covid Servise
+# Test Covid Service
 
 ## Description:
 
 This is a test.
 
-The test is to create a servise to filter the information from a web json API and offer the results as a web json API.
+The test is to create a service to filter the information from a web json API and offer the results as a web json API.
 
 To call the information you can write the related filter in the url: root/filter.
 
@@ -49,21 +49,23 @@ app.listen(port, ()=>{
 });
 
 ```
-Intenté traer el json de la API ofecida con https mas no me fue posible:
+
+I tried to implement the Json API with https but it was not possible:
 
 ```javascript
 const https = require('https');
 
 ```
-
-Después un algunas horas de buscar la forma correcta de traer el json de la URL encontrada en en la prueba decidí hacer un curso completo sobre backend con Node js y Express js:
+After some hours of serching the correct way to bring the Json from the URL of the test, I decided to watch a complete course
+of Node and Express js.
 
 [Javascript FullStack](https://www.youtube.com/playlist?list=PLo5lAe9kQrwq7n_REwpZdfggPCBW2ggnh).
 
-Al final y después de algunos errores de implementación terminé por utilizar fetch() de node-fetch;
+
+At the end, and after some errors of implementation I ended by using fetch() from node-fetch:
 
 ```javascript
 const fetch = require('node-fetch');
 
 ```
-Al final mi implementación es la aplicación de un filter() sobre el fetch que hice a la API json.
+At the end, my implementation is the use of a filter() to a fetch() to the Json API.
